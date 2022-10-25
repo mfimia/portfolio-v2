@@ -8,19 +8,19 @@ interface Social {
 export const socials: Social[] = [
   {
     name: "GitHub",
-    link: "https://github.com/braydentw",
+    link: "https://github.com/mfimia",
     icon: "/static/icons/github-f.svg",
     leavesWebsite: true,
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/braydentw/",
+    link: "https://www.linkedin.com/in/martinfimia/",
     icon: "/static/icons/linkedin-f.svg",
     leavesWebsite: true,
   },
   {
     name: "Email",
-    link: "mailto:contact@braydentw.io",
+    link: "mailto:martin.fimia.osuna@hotmail.com",
     icon: "/static/icons/mail-f.svg",
     leavesWebsite: true,
   },

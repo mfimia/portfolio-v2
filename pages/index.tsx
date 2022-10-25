@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <main className="p-5 w-full flex-1 text-center">
           <Navbar />
           <Hero />
-          <div className="mt-20 space-y-12">
+          <div className="sm:mt-20 space-y-12">
             <Skills />
             <Projects />
           </div>

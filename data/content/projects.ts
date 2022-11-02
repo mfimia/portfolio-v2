@@ -30,6 +30,15 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    title: "Endless Runner",
+    desc: "Fun runner game made with Javascript",
+    img: "/static/projects/endless_runner.png",
+    link: "https://mfimia.github.io/endless_runner/",
+    github: "https://github.com/mfimia/endless_runner",
+    tags: ["HTML", "CSS", "Javascript"],
+  },
+  {
+    id: 4,
     title: "IT Logger",
     desc: "Keep track of IT tickets and available technicians",
     img: "/static/projects/it_logger.png",
@@ -38,7 +47,7 @@ const projects: Project[] = [
     tags: ["React", "NodeJS", "MongoDB", "Express", "MUI"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Techy News",
     desc: "Find the latest tech news out there",
     img: "/static/projects/techy_news.png",
@@ -47,13 +56,22 @@ const projects: Project[] = [
     tags: ["React", "MUI"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Meme Generator",
     desc: "Did anyone say memes? 👀",
     img: "/static/projects/meme_generator.png",
     link: "https://mfimia-memegenerator.netlify.app/",
     github: "https://github.com/mfimia/meme-generator",
     tags: ["React"],
+  },
+  {
+    id: 7,
+    title: "Location finder",
+    desc: "Find your IP and location",
+    img: "/static/projects/ip_finder.png",
+    link: "https://ipfinder-geo.netlify.app/",
+    github: "https://github.com/mfimia/ip-app",
+    tags: ["React", "Bootstrap", "graphQL"],
   }
 ];
 

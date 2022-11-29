@@ -3,7 +3,7 @@ import Head from 'next/head'
 const Header = () => {
   return (
     <Head>
-      <title>Martin Fimia - Frontend Developer</title>
+      <title>Martin Fimia - Software Developer</title>
       <link
         rel="apple-touch-icon"
         sizes="180x180"

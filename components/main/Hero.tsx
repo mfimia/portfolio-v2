@@ -10,7 +10,7 @@ const Hero: FC = (): JSX.Element => {
     >
       <p className="text-xl mb-5">Hey, I&apos;m Martin</p>
       <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
-        Full stack <span className="heroShiny1 text-fun-pink">software</span> developer
+        <span className="heroShiny1 text-fun-pink">Full stack</span> software <span className="heroShiny1 text-fun-pink">developer</span>
         <img
           className="sqD hidden sm:block top-[-120px] right-[5%] sm:right-[170px]"
           style={{ animationDelay: '0.1s' }}

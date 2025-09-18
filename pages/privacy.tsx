@@ -25,7 +25,7 @@ const Privacy: NextPage = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold mb-4 text-white">Information We Don't Collect</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-white">Information We Don&apos;t Collect</h2>
                 <ul className="list-disc list-inside space-y-2">
                   <li>Personal identifying information (name, email, address, phone number)</li>
                   <li>Technical information (IP address, browser type, device information)</li>

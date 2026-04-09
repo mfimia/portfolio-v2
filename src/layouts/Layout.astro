@@ -3,7 +3,14 @@ interface Props {
   title: string;
   description?: string;
 }
-const { title, description = "Software Engineer & Tech Entrepreneur — Building products people actually use." } = Astro.props;
+const {
+  title,
+  description = "Software Engineer & Tech Entrepreneur — Building products people actually use.",
+} = Astro.props;
+const canonicalURL = new URL(
+  Astro.url.pathname,
+  Astro.site ?? "https://www.mfimia.com"
+);
 ---
 
 <!doctype html>
@@ -12,10 +19,35 @@ const { title, description = "Software Engineer & Tech Entrepreneur — Building
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="author" content="Martín Fimia" />
+    <meta name="theme-color" content="#0a0a0f" />
+    <link rel="canonical" href={canonicalURL.href} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <title>{title}</title>
   </head>
   <body class="min-h-screen overflow-x-hidden">

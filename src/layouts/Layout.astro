@@ -49,8 +49,21 @@ const canonicalURL = new URL(
     />
 
     <title>{title}</title>
+
+    <!-- Google Analytics -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-EN76XSM0BP"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EN76XSM0BP');
+    </script>
   </head>
   <body class="min-h-screen overflow-x-hidden">
     <slot />
+    <script>
+      import { inject } from '@vercel/analytics';
+      inject();
+    </script>
   </body>
 </html>

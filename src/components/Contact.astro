@@ -1,0 +1,43 @@
+---
+const socials = [
+  { label: "GitHub", href: "https://github.com/mfimia" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/martinfimia/" },
+  { label: "Email", href: "mailto:martin.fimia.osuna@hotmail.com" },
+];
+---
+
+<section id="contact" class="relative py-24 md:py-32 circuit-bg">
+  <div class="mx-auto max-w-7xl px-6 text-center">
+    <h2 class="mb-4 font-heading text-4xl font-bold uppercase tracking-wide text-fg md:text-5xl">
+      <span class="text-accent">//</span> Contact
+    </h2>
+    <p class="mb-12 font-label text-sm uppercase tracking-[0.2em] text-fg-muted">
+      &gt; ping --establish-connection
+    </p>
+
+    <p class="mx-auto mb-12 max-w-xl text-base leading-relaxed tracking-wide text-fg-muted">
+      Building something interesting? Need a technical co-founder, a collaborator, or just want to talk shop? Let's connect.
+    </p>
+
+    <a
+      href="mailto:martin.fimia.osuna@hotmail.com"
+      class="cyber-chamfer-sm inline-block border-2 border-accent bg-transparent px-10 py-4 font-label text-base uppercase tracking-widest text-accent transition-all hover:bg-accent hover:text-bg"
+    >
+      Say Hello
+    </a>
+
+    <!-- Social links -->
+    <div class="mt-16 flex items-center justify-center gap-8">
+      {socials.map((s) => (
+        <a
+          href={s.href}
+          class="font-label text-sm uppercase tracking-[0.2em] text-fg-muted transition-colors hover:text-accent"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {s.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

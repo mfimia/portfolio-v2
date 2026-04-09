@@ -1,0 +1,55 @@
+---
+const pillars = [
+  {
+    number: "01",
+    title: "Ideation",
+    description: "Finding problems worth solving. Not every idea deserves code — the best products start with a deep understanding of who needs what and why.",
+    accent: "text-accent",
+  },
+  {
+    number: "02",
+    title: "Architecture",
+    description: "Understanding systems deeply enough to choose the right tool, not the trendy one. The tech stack serves the product, never the other way around.",
+    accent: "text-accent-tertiary",
+  },
+  {
+    number: "03",
+    title: "Execution",
+    description: "Shipping fast, iterating faster. Real users and real revenue are the only metrics that matter. Everything else is noise.",
+    accent: "text-accent-secondary",
+  },
+  {
+    number: "04",
+    title: "Distribution",
+    description: "A great product nobody knows about is a failed product. Getting it in front of the right people is half the battle.",
+    accent: "text-accent",
+  },
+];
+---
+
+<section id="approach" class="relative py-24 md:py-32">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="mb-4 font-heading text-4xl font-bold uppercase tracking-wide text-fg md:text-5xl">
+      <span class="text-accent">//</span> Approach
+    </h2>
+    <p class="mb-16 font-label text-sm uppercase tracking-[0.2em] text-fg-muted">
+      &gt; cat ~/philosophy/how-i-build.md
+    </p>
+
+    <div class="grid gap-px overflow-hidden md:grid-cols-2 lg:grid-cols-4">
+      {pillars.map((pillar) => (
+        <div class="group border border-border bg-bg-card p-8 transition-all duration-300 hover:border-accent hover:neon-glow">
+          <span class={`font-heading text-4xl font-black ${pillar.accent} opacity-30`}>
+            {pillar.number}
+          </span>
+          <h3 class="mt-4 font-heading text-lg font-bold uppercase tracking-widest text-fg group-hover:text-accent">
+            {pillar.title}
+          </h3>
+          <p class="mt-3 text-sm leading-relaxed tracking-wide text-fg-muted">
+            {pillar.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
